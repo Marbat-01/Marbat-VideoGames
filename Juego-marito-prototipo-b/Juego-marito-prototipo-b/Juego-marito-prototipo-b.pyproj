@@ -1,0 +1,79 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>aefae0ef-0b0d-458c-adcb-2ed699d1cd96</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Juego_marito_prototipo_b.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Juego-marito-prototipo-b</Name>
+    <RootNamespace>Juego-marito-prototipo-b</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="fighter.py" />
+    <Compile Include="Juego_marito_prototipo_b.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="principal\assets\" />
+    <Folder Include="principal\assets\audio\" />
+    <Folder Include="principal\assets\fonts\" />
+    <Folder Include="principal\assets\images\" />
+    <Folder Include="principal\" />
+    <Folder Include="principal\assets\images\background\" />
+    <Folder Include="principal\assets\images\icons\" />
+    <Folder Include="principal\assets\images\warrior\Sprites\" />
+    <Folder Include="principal\assets\images\wizard\" />
+    <Folder Include="principal\assets\images\warrior\" />
+    <Folder Include="principal\assets\images\wizard\Sprites\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="principal\assets\audio\hit.mp3" />
+    <Content Include="principal\assets\audio\kirby-robobot.mp3" />
+    <Content Include="principal\assets\fonts\Turok.ttf" />
+    <Content Include="principal\assets\images\background\background.jpg" />
+    <Content Include="principal\assets\images\background\steampunk.jpg" />
+    <Content Include="principal\assets\images\icons\victory.png" />
+    <Content Include="principal\assets\images\icons\victorygra.png" />
+    <Content Include="principal\assets\images\warrior\Sprites\Attack1.png" />
+    <Content Include="principal\assets\images\warrior\Sprites\Attack2.png" />
+    <Content Include="principal\assets\images\warrior\Sprites\Attack3.png" />
+    <Content Include="principal\assets\images\warrior\Sprites\Death.png" />
+    <Content Include="principal\assets\images\warrior\Sprites\Fall.png" />
+    <Content Include="principal\assets\images\warrior\Sprites\Idle.png" />
+    <Content Include="principal\assets\images\warrior\Sprites\Jump.png" />
+    <Content Include="principal\assets\images\warrior\Sprites\Run.png" />
+    <Content Include="principal\assets\images\warrior\Sprites\Take hit.png" />
+    <Content Include="principal\assets\images\warrior\Sprites\warrior.png" />
+    <Content Include="principal\assets\images\warrior\Sprites\warrior.xcf" />
+    <Content Include="principal\assets\images\wizard\Sprites\Attack1.png" />
+    <Content Include="principal\assets\images\wizard\Sprites\Attack2.png" />
+    <Content Include="principal\assets\images\wizard\Sprites\Death.png" />
+    <Content Include="principal\assets\images\wizard\Sprites\Fall.png" />
+    <Content Include="principal\assets\images\wizard\Sprites\Idle.png" />
+    <Content Include="principal\assets\images\wizard\Sprites\Jump.png" />
+    <Content Include="principal\assets\images\wizard\Sprites\Run.png" />
+    <Content Include="principal\assets\images\wizard\Sprites\Take hit.png" />
+    <Content Include="principal\assets\images\wizard\Sprites\wizard.png" />
+    <Content Include="principal\assets\images\wizard\Sprites\wizard.xcf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
